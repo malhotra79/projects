@@ -1,0 +1,16 @@
+
+<ag-grid-angular #agGrid
+                  id="grid-wrapper"
+                  style="height: 550px; width:100%; margin: 6px; text-align:left; font-size: 12px;"
+                  class="ag-theme-balham"
+                  [gridOptions]="gridOptions"
+                  [rowData]="rowData"
+                  [columnDefs]="columnDefs"
+                  [paginationPageSize]="30"
+                  [pagination]="true"
+                  [headerHeight]="25"
+                  [rowHeight]="30"
+                  (cellClicked)="onCellClicked($event)">
+</ag-grid-angular>
+
+
